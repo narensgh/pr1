@@ -1,0 +1,83 @@
+<div class="page-content" style="min-height:1274px">
+    <!-- BEGIN PAGE HEADER-->
+    <h3 class="page-title">Dashboard</h3>
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="#">Home</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+        </ul>
+    </div>
+    <!-- END PAGE HEADER-->
+    <!-- BEGIN DASHBOARD STATS -->
+    <div id="seed-stats">
+        <div class="row">
+            <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+              <a href="javascript:;" class="dashboard-stat dashboard-stat-light blue-soft">
+                  <div class="visual">
+                      
+                  </div>
+                  <div class="details">
+                      <div class="number">
+                          {{deliveryStats.SENT}}
+                      </div>
+                      <div class="desc">
+                          TOTAL SENT
+                      </div>
+                  </div>
+              </a>
+          </div>
+          
+          <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+              <a href="javascript:;" class="dashboard-stat dashboard-stat-light green-soft">
+                  <div class="visual">
+                      
+                  </div>
+                  <div class="details">
+                      <div class="number">
+                          {{deliveryStats.INBOX}}
+                      </div>
+                      <div class="desc">
+                          TOTAL INBOX
+                      </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+              <a href="javascript:;" class="dashboard-stat dashboard-stat-light red-soft">
+                  <div class="visual">
+                  </div>
+                  <div class="details">
+                      <div class="number">
+                          {{deliveryStats.SPAM}}
+                      </div>
+                      <div class="desc">
+                          TOATAL SAPM
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div id="client-seed-summary">
+                <!--<h1>Tested</h1>-->
+            </div>
+        </div>
+    </div>
+    <!-- Mail Summary  -->
+    <div class="row">
+        <div class="col-md-12">
+            <div id="seed-summary">
+            </div>
+            <div id="loading-container">loading..!!</div>
+        </div>
+    </div>
+</div>

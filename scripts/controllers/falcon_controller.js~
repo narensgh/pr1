@@ -1,0 +1,31 @@
+'use strict';
+
+var Chaplin = require('chaplin'),
+    $ = require('jquery'),
+    SiteView = require('../views/site'),
+    HeaderView = require('../views/partials/header1'),
+    SidebarView = require('../views/partials/sidebar'),
+    FooterView = require('../views/partials/footer'),
+    IndexView = require('../views/dashboard/index');
+
+var FalconController = Chaplin.Controller.extend({
+    initialize: function (params, route, options) {
+        Chaplin.Controller.prototype.initialize.call(this);
+
+    },
+    beforeAction: function (params, route, options) {
+        Chaplin.Controller.prototype.beforeAction.call(this);
+        this.reuse('site', SiteView);
+        this.reuse('header', HeaderView);
+        this.reuse('sidebar', SidebarView);
+        this.reuse('footer', FooterView);
+    },
+    // launch app by displaying projects
+    index: function (params, route, options) {
+        this.reuse('projectsView', IndexView, {
+            name: 'narendra' 
+        });
+    }
+
+});
+module.exports = FalconController;

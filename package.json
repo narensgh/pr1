@@ -1,0 +1,21 @@
+{
+  "name": "FalconAdmin",
+  "author": "narendra.singh",
+  "version": "1.0.0",
+  "description": "Minify files with UglifyJS.",
+  "devDependencies": {
+    "backbone": "~1.1.2",
+    "browserify": "~13.0.0",
+    "backbone.attributes": "~0.7.1",
+    "chaplin": "~1.1.1",
+    "fs": "0.0.2",
+    "gulp": "~3.9.1",
+    "gulp-util": "~3.0.7",
+    "handlebars": "~4.0.5",
+    "hbsfy": "~2.7.0",
+    "jquery": "~2.2.3",
+    "underscore": "~1.8.3",
+    "vinyl-source-stream": "~1.1.0",
+    "js-md5": "~0.4.1"
+  }
+}
